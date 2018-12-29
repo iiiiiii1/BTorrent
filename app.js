@@ -62,7 +62,7 @@ const app = angular.module('BTorrent',
     })
   }]
 )
-
+app.controller('BTorrentCtrl', ['$scope', '$rootScope', '$http', '$log', '$location', 'ngNotify', function ($scope, $rootScope, $http, $log, $location, ngNotify) {
   let updateAll
   $rootScope.version = VERSION
   ngNotify.config({
